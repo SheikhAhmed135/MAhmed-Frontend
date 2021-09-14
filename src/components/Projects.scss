@@ -1,0 +1,189 @@
+// Projects Start
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bdbfc0;
+  // background: url("../assets/project-background.svg");
+  background: linear-gradient(to left bottom, #22c19b 30%, #7855ac 55%);
+  font-family: "PhilosopherFont";
+  padding-top: 50px;
+}
+
+.project-quotes {
+  margin: 50px;
+  padding: 100px 20px;
+  border: 1px #030c13 dotted;
+  border-radius: 50px;
+  width: 90%;
+  box-shadow: rgba(0, 0, 0, 0.671);
+  -webkit-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  h1 {
+    color: #fff;
+    line-height: 1.4em;
+    font-size: 30px;
+  }
+  p {
+    color: #ccc;
+    line-height: 1.8em;
+    font-size: 16px;
+  }
+}
+
+.project-cards {
+  margin: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+// .project-card:nth-child(odd) {
+//   margin-top: 20px;
+// }
+
+.project-card {
+  background: #1b1c1e;
+  margin: 30px;
+  margin-top: 80px;
+  color: #737374;
+  padding: 20px;
+  width: 100%;
+  max-width: 80%;
+  box-sizing: border-box;
+  height: 100%;
+  word-wrap: break-word;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.671);
+  -webkit-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.8);
+
+  .project-name {
+    a {
+      color: skyblue;
+      font-size: 24px;
+    }
+  }
+
+  .project-details {
+    padding: 10px 0;
+  }
+  hr {
+    width: 50%;
+    margin: auto;
+    min-height: 2px;
+    height: 2px;
+    border-radius: 7px;
+    background-color: #3f4349;
+    box-shadow: 0 1px 0 hsla(0, 0%, 100%, 0.1),
+      inset 0 1px 0 rgba(0, 0, 0, 0.25);
+    border-top: 0px;
+  }
+}
+
+.project-card:hover {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  transition: all 0.3s ease 0s;
+}
+
+@media (min-width: 992px) {
+  .projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #bdbfc0;
+    // background: url("../assets/project-background.svg");
+    background: linear-gradient(to left bottom, #22c19b 30%, #7855ac 55%);
+    font-family: "PhilosopherFont";
+    padding-top: 50px;
+  }
+  
+  .project-quotes {
+    margin: 50px;
+    padding: 100px 20px;
+    border: 1px #030c13 dotted;
+    border-radius: 50px;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.671);
+    -webkit-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    h1 {
+      color: #fff;
+      line-height: 1.4em;
+      font-size: 30px;
+    }
+    p {
+      color: #ccc;
+      line-height: 1.8em;
+      font-size: 16px;
+    }
+  }
+  
+  .project-cards {
+    margin: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .project-card:nth-child(odd) {
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    background: #1b1c1e;
+    margin: 30px;
+    margin-top: 80px;
+    color: #737374;
+    padding: 20px;
+    width: 30%;
+    max-width: 40%;
+    box-sizing: border-box;
+    height: 100%;
+    word-wrap: break-word;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.671);
+    -webkit-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.8);
+  
+    .project-name {
+      a {
+        color: skyblue;
+        font-size: 24px;
+      }
+    }
+  
+    .project-details {
+      padding: 10px 0;
+    }
+    hr {
+      width: 50%;
+      margin: auto;
+      min-height: 2px;
+      height: 2px;
+      border-radius: 7px;
+      background-color: #3f4349;
+      box-shadow: 0 1px 0 hsla(0, 0%, 100%, 0.1),
+        inset 0 1px 0 rgba(0, 0, 0, 0.25);
+      border-top: 0px;
+    }
+  }
+  
+  .project-card:hover {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    transition: all 0.3s ease 0s;
+  }
+}
+
+// Projects End
