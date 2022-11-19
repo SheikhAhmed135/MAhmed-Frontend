@@ -128,13 +128,13 @@
   
   .project-cards {
     margin: 30px;
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
+    // align-items: flex-start;
   }
   
   .project-card:nth-child(odd) {

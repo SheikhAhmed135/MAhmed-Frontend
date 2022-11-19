@@ -10,13 +10,6 @@ const Projects = () => {
 
   return (
     <div className="projects">
-      <div className="project-quotes w3-animate-top">
-        <h1>Let Your Website Take Your Business to Higher Grounds</h1>
-        <p>
-          I can make professional high quality appealing and responsive website
-          for you.
-        </p>
-      </div>
       {projects.hasLoaded && (
         <>
           <div className="project-cards" ref={ref}>

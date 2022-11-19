@@ -1,5 +1,0 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow: /home
-Disallow: /contact
-Disallow:  https://new-ahmed.herokuapp.com/

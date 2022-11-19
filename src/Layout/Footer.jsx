@@ -40,7 +40,7 @@ const Footer = () => {
           </a>
         </div> */}
         <div className="copy-right">
-          &copy;2021 Created by Ahmed
+          &copy;{new Date().getFullYear()} Created by <u>Muhammad Ahmed</u>
         </div>
       </footer>
     </>
