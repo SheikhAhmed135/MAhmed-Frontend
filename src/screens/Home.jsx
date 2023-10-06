@@ -75,7 +75,7 @@ const Home = () => {
 
         {/* Technologies End */}
 
-        <div class="skew-cc"></div>
+        <div className="skew-cc"></div>
 
         {/* Projects Start */}
 
@@ -83,7 +83,7 @@ const Home = () => {
 
         {/* Projects End */}
 
-        <div class="skew-c"></div>
+        <div className="skew-c"></div>
       </div>
     </>
   );
