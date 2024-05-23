@@ -1,3 +1,10 @@
+#navbar {
+  background-image: url("../assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 .icons {
   margin-right: 20px;
   color: var(--textcolor);
@@ -24,7 +31,6 @@
 
 .Resume {
   width: 120px;
-  height: 35px;
   border: none;
   outline: none;
   transition: ease-out 0.3s;

@@ -1,9 +1,8 @@
 .about-title {
   display: flex;
   justify-content: center;
-  margin-top: 40vh;
+  margin: 10vh 0;
   color: var(--textcolor);
-
   font-size: 5rem;
 }
 
@@ -20,7 +19,7 @@
 }
 
 .section-divider {
-  position: absolute;
+  /* position: absolute; */
   border-top: 1px solid rgb(127, 126, 126);
   width: 100vw;
   z-index: -2;

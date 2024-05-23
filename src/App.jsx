@@ -1,8 +1,8 @@
 import Navbar from './Navbar';
-import './CSS Files/App.css';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
+import './CSS Files/App.css';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <About />
       <Projects />
-      <Contact/>
+      <Contact />
     </div>
   );
 }
