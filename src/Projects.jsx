@@ -6,6 +6,7 @@ import IID from "../src/assets/IID.avif";
 import SMS from "../src/assets/SMS.png";
 import quiz from "../src/assets/quiz.webp";
 import api from "../src/assets/api.png";
+import thumbnail from "../src/assets/thumbnail.png";
 import "./CSS Files/projects.css";
 import PropTypes from "prop-types";
 
@@ -41,7 +42,7 @@ function ProjectCard({
       >
         <img
           className="images"
-          src={imageSrc}
+          src={imageSrc ?? thumbnail}
           alt={title}
           width="100%"
           height="250px"
@@ -86,6 +87,22 @@ function ProjectCard({
 function Projects() {
   const projects = [
     {
+      name: "Recipe App API",
+      github: "https://github.com/muhammad-ahmed02/recipe-app-api",
+      date: "March 2024 - May 2024",
+      technologies: [
+        "Python",
+        "Django",
+        "Django REST framework",
+        "Docker",
+        "Test Driven Development",
+        "GitHub Actions",
+        "Flake8 Linting",
+      ],
+      details:
+        "The purpose for this is to learn the advanced concepts of Python Django API with Test Driven Development methodology.",
+    },
+    {
       name: "DataBridge",
       image: DataBridge,
       github: "https://github.com/muhammad-ahmed02/DataBridge",
@@ -103,7 +120,7 @@ function Projects() {
       details:
         "The Data Bridge project showcases my expertise in data warehousing and ETL processing. \
         The project involves moving data from AWS S3 to Snowflake using ETL processing. \
-        The ETL process is implemented using the Snowflake library in the Django framework."
+        The ETL process is implemented using the Snowflake library in the Django framework.",
     },
     {
       name: "API integrations (Company Product)",
@@ -142,7 +159,6 @@ function Projects() {
     {
       name: "Quizzers Club",
       image: quiz,
-      website: "https://quizzers.club/",
       date: "March 2022",
       technologies: ["Python", "Django", "React.js", "Firebase"],
       details:
@@ -160,17 +176,17 @@ function Projects() {
       details:
         "Business website for a company named SMS Safety for the display of their safety products mainly leather gloves.",
     },
-    {
-      name: "Instagram Image Downloader",
-      image: IID,
-      github:
-        "https://github.com/muhammad-ahmed02/Instagram-Image-Scrapper.git",
-      date: "Aug 2021",
-      technologies: ["Python"],
-      details:
-        "Instagram Image Downloader - Python script to download images of any account that you follow or is public, \
-        videos can't be downloaded instead thumbnails will be downloaded.",
-    },
+    // {
+    //   name: "Instagram Image Downloader",
+    //   image: IID,
+    //   github:
+    //     "https://github.com/muhammad-ahmed02/Instagram-Image-Scrapper.git",
+    //   date: "Aug 2021",
+    //   technologies: ["Python"],
+    //   details:
+    //     "Instagram Image Downloader - Python script to download images of any account that you follow or is public, \
+    //     videos can't be downloaded instead thumbnails will be downloaded.",
+    // },
   ];
 
   return (

@@ -19,7 +19,7 @@ function About() {
     "Github/Git",
   ];
 
-  const learnings = ["Data Engineering", "Machine Learning"];
+  const learnings = ["Data Engineering", "Docker"];
 
   return (
     <section className="about-section" id="About">
