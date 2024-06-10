@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faChrome } from "@fortawesome/free-brands-svg-icons";
 import DataBridge from "../src/assets/DataBridge.jpg";
 import IMS from "../src/assets/IMS.png";
-import IID from "../src/assets/IID.avif";
+// import IID from "../src/assets/IID.avif";
 import SMS from "../src/assets/SMS.png";
 import quiz from "../src/assets/quiz.webp";
 import api from "../src/assets/api.png";

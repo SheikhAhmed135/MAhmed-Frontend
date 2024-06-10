@@ -14,7 +14,7 @@ function Navbar() {
       strings: [
         "I am a Software Engineer",
         "I like coding in Python",
-        "I enjoy watching shows",
+        "I enjoy playing games",
         "Keep scrolling!",
       ],
       autoStart: true,
@@ -46,7 +46,7 @@ function Navbar() {
       <a
         href="https://www.linkedin.com/in/muhammad-ahmed02/"
         target="_blank"
-        className="icons" 
+        className="icons"
         rel="noreferrer"
       >
         <FontAwesomeIcon icon={faLinkedin} size="2x" />
