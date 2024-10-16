@@ -1,12 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faChrome } from "@fortawesome/free-brands-svg-icons";
-import DataBridge from "../src/assets/DataBridge.jpg";
-import IMS from "../src/assets/IMS.png";
-// import IID from "../src/assets/IID.avif";
-import SMS from "../src/assets/SMS.png";
-import quiz from "../src/assets/quiz.webp";
-import api from "../src/assets/api.png";
-import thumbnail from "../src/assets/thumbnail.png";
+import DataBridge from "./assets/DataBridge.jpg";
+import IMS from "./assets/IMS.png";
+import privacyte from "./assets/privacyte.png";
+// import IID from "./assets/IID.avif";
+import quiz from "./assets/quiz.webp";
+// import SMS from "./assets/SMS.png";
+// import api from "./assets/api.png";
+import thumbnail from "./assets/thumbnail.png";
 import "./CSS Files/projects.css";
 import PropTypes from "prop-types";
 
@@ -87,6 +88,16 @@ function ProjectCard({
 function Projects() {
   const projects = [
     {
+      name: "Privacyte",
+      image: privacyte,
+      date: "Dec 2023 - July 2024",
+      technologies: ["Python", "Flask", "MongoDB", "Heroku", "Flutter"],
+      details:
+        "Privacyte is the final year project where me and my team focused on digital innovation creating\
+        a diverse mobile application with flutter. Attention to detail was important in this because of\
+        teamwork. We had to brainstorm ways to adapt our ideas into the application.",
+    },
+    {
       name: "Recipe App API",
       github: "https://github.com/muhammad-ahmed02/recipe-app-api",
       date: "March 2024 - May 2024",
@@ -100,7 +111,8 @@ function Projects() {
         "Flake8 Linting",
       ],
       details:
-        "The purpose for this is to learn the advanced concepts of Python Django API with Test Driven Development methodology.",
+        "A practice project base on Python programming language following the industry trend to write\
+        and resolve issues in a professional way.",
     },
     {
       name: "DataBridge",
@@ -116,25 +128,12 @@ function Projects() {
         "Snowflake",
         "HTML",
         "Bootstrap CSS",
+        "Heroku",
       ],
       details:
         "The Data Bridge project showcases my expertise in data warehousing and ETL processing. \
         The project involves moving data from AWS S3 to Snowflake using ETL processing. \
         The ETL process is implemented using the Snowflake library in the Django framework.",
-    },
-    {
-      name: "API integrations (Company Product)",
-      image: api,
-      date: "July 2022 - Present",
-      technologies: ["Python", "Pandas"],
-      details: `1. LinkedIn. \
-             2. BusinessCenteral365. \
-             3. Google Drive. \
-             4. Gmail. \
-             5. Slack. \
-             6. AWS S3. \
-             7. Microsoft Azure. \
-             And many more APIs like these...`,
     },
     {
       name: "Invetory Management System",
@@ -157,6 +156,14 @@ function Projects() {
         The system is designed to be scalable and can be easily customized to fit the needs of different businesses.",
     },
     {
+      name: "AT8",
+      date: "March 2021 - May 2021",
+      technologies: ["Python", "Django", "REST APIs", "PostgreSQL", "React js"],
+      details:
+        "Putting the technology in the solution with a full web based environment for all the gamer\
+        community to interact and participate in tournaments.",
+    },
+    {
       name: "Quizzers Club",
       image: quiz,
       date: "March 2022",
@@ -166,16 +173,16 @@ function Projects() {
         No matter time zone, but 1 admin can control the quiz for multiple users at the same time. \
         I used firebase for the realtime communication between user and admin.",
     },
-    {
-      name: "SMS Safety",
-      image: SMS,
-      github: "https://github.com/muhammad-ahmed02/sms-safety-frontend.git",
-      date: "Dec 2021",
-      website: "https://smssafty.com/",
-      technologies: ["React.js"],
-      details:
-        "Business website for a company named SMS Safety for the display of their safety products mainly leather gloves.",
-    },
+    // {
+    //   name: "SMS Safety",
+    //   image: SMS,
+    //   github: "https://github.com/muhammad-ahmed02/sms-safety-frontend.git",
+    //   date: "Dec 2021",
+    //   website: "https://smssafty.com/",
+    //   technologies: ["React.js"],
+    //   details:
+    //     "Business website for a company named SMS Safety for the display of their safety products mainly leather gloves.",
+    // },
     // {
     //   name: "Instagram Image Downloader",
     //   image: IID,
@@ -207,52 +214,6 @@ function Projects() {
             description={project.details}
           />
         ))}
-        {/* <ProjectCard
-          title="Health Policy Student Association"
-          imageSrc={medical}
-          githubLink="https://github.com/ChrisMikhail/hpsa-website"
-          technologies="HTML CSS JavaScript JQuery"
-          description="The website is a nonprofit organization aiming to raise awareness among students by providing information on corporate health and policies. It serves as a project proposal with a fully responsive design for both mobile and desktop platforms. Website url/link is posted in the READ ME."
-        />
-
-        <ProjectCard
-          title="Hackathon Fault Finder"
-          imageSrc={fault}
-          githubLink="https://github.com/HNow/MetHacks2023Base"
-          technologies="NodeJS, Astro/React, HTML/CSS, JS/JSX, Python, OpenAI API, Figma"
-          description="The project employs OpenAI's API to generate interview-level questions paired with intentionally incorrect solutions. It utilizes a backend database in Node.js to present users with these questions and solutions, allowing them to review and debug the provided code. The system then provides feedback on the accuracy of the debugging process."
-        />
-
-        <ProjectCard
-          title="React Calendar"
-          imageSrc={calendar}
-          githubLink="https://github.com/Octrainn/React-Calendar-App"
-          technologies="React JSX, GH-Pages, Vite, CSS"
-          description="React-Calendar is a feature-rich calendar component built using React. Leveraging the power of React, it offers several dynamic and interactive features to enhance the user experience."
-        />
-
-        <ProjectCard
-          title="Discord Bot Weaver"
-          imageSrc={discord}
-          githubLink="https://github.com/Octrainn/DiscordBot"
-          technologies="Python, OAuth 2.0, Spotify API"
-          description="Versatile Discord bot that utilizes the Spotify API to stream music, and it offers several other functionalities like moderation, chat restriction, image generation, and meme generation."
-        />
-
-        <ProjectCard
-          title="Tensor Flow Model"
-          imageSrc={tensor}
-          githubLink="https://github.com/Octrainn/TensorFlowModel"
-          technologies="Python, Juypter Notebook, Google Colab"
-          description="Mini-project that focuses on implementing a machine learning model to accurately differentiate between images of humans and animals, specifically distinguishing between dogs and cats. Additionally, the project leverages the computational capabilities of Google Colab to efficiently train the model and handle the image datasets effectively."
-        />
-        <ProjectCard
-          title="Static Portfolio "
-          imageSrc={picture}
-          githubLink="https://github.com/Octrainn/octrainn.github.io"
-          technologies="HTML, CSS, JavaScript, JQuery, Bootstrap CSS"
-          description="Experience my previous static portfolio designed to elegantly display my abilities and projects. Its responsive and dynamic layout ensures seamless viewing across various devices, including laptops, mobiles, and PCs. Website url/link is posted in the READ ME."
-        /> */}
       </div>
     </div>
   );

@@ -9,14 +9,14 @@ function About() {
   const languages = [
     "Python",
     "Django",
+    "Flask",
+    "Pandas",
     "SQL",
     "React",
     "HTML/CSS",
     "JavaScript",
-    "Bootstrap CSS",
-    "Tailwind",
     "AWS",
-    "Github/Git",
+    "Git",
   ];
 
   const learnings = ["Data Engineering", "Docker"];
@@ -30,24 +30,28 @@ function About() {
       <div className="content-wrapper">
         <div className="about-text">
           <p>
-            {
-              "Hey there! I'm a software engineer with experience in web development and ETL processing, I am passionate about building innovative solutions that solve complex problems. I have worked with Python, Django, and React to develop web applications that are both functional and user-friendly. I am also interested in exploring the data engineering field as my main domain to work on."
-            }
+            With over 2 years of experience as a software developer, I have had
+            the opportunity to work on diverse projects under both Agile and
+            Waterfall methodologies. My focus has always been on delivering
+            high-quality, efficient software solutions that align with client
+            requirements. Working in collaborative team environments has allowed
+            me to refine my problem-solving skills and contribute meaningfully
+            to each project’s success.
           </p>
           <br />
           <p>
-            In my current role as a software engineer, I have gained valuable
-            experience in developing and maintaining web applications, as well
-            as designing and implementing ETL pipelines. I have a strong
-            understanding of software development principles and best practices,
-            and I am always looking for ways to improve my skills and knowledge.
+            What sets me apart is my passion for resolving challenges with
+            honesty and professionalism. I enjoy the process of troubleshooting
+            and finding innovative ways to overcome obstacles, ensuring that the
+            end result not only meets but exceeds expectations. Whether working
+            independently or within a team, I maintain a strong commitment to
+            delivering software that adds value and drives results.
           </p>
           <br />
           <p>
-            I am excited about the opportunities that the data engineering field
-            presents, and I am eager to continue exploring this area. I am
-            confident that my skills and experience in software engineering will
-            enable me to make a valuable contribution to any team or project.
+            As I continue to grow in my career, I remain eager to learn and
+            adapt to new technologies and practices, always striving to improve
+            the quality of my work and the satisfaction of my clients.
           </p>
         </div>
         <div className="right-section">

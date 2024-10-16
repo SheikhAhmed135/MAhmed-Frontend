@@ -10,7 +10,7 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   grid-gap: 2rem;
   margin: 13rem;
-  gap: 15rem;
+  gap: 10rem;
   margin-bottom: 2rem;
 }
 

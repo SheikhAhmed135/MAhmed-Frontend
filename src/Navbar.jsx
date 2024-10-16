@@ -4,7 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Link } from "react-scroll";
 import "./CSS Files/Navbar.css";
 import Typewriter from "typewriter-effect/dist/core";
-import Pdf from "./assets/MAhmedResume.pdf";
+import Pdf from "./assets/MuhammadAhmed.pdf";
 
 function Navbar() {
   const typewriterRef = useRef(null);
